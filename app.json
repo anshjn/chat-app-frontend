@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "chat-app",
-    "slug": "chat-app",
+    "name": "test",
+    "slug": "test",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
     ]
   },
-  "name": "chat-app"
+  "name": "test"
 }

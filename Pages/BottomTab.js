@@ -10,18 +10,18 @@ import RequestList from './RequestList';
 const Tab = createBottomTabNavigator();
 
 export default function BottomTab() {
-  const onPress = () => {
-    const event = navigation.emit({
-      type: 'tabPress',
-      target: route.key,
-      canPreventDefault: true,
-    });
+  // const onPress = () => {
+  //   const event = navigation.emit({
+  //     type: 'tabPress',
+  //     target: route.key,
+  //     canPreventDefault: true,
+  //   });
 
-    if (!isFocused && !event.defaultPrevented) {
-      // The `merge: true` option makes sure that the params inside the tab screen are preserved
-      navigation.navigate({ name: route.name, merge: true });
-    }
-  };
+  //   if (!isFocused && !event.defaultPrevented) {
+  //     // The `merge: true` option makes sure that the params inside the tab screen are preserved
+  //     navigation.navigate({ name: route.name, merge: true });
+  //   }
+  // };
   
   return (
     <View style={styles.fixpos}>
@@ -62,40 +62,40 @@ export default function BottomTab() {
 
 const styles = StyleSheet.create({
   fixpos: {
-    position: 'fixed',
-    left: 0,
-    bottom: 0,
-    width: '100%',
+    // position: 'absolute',
+    // left: 0,
+    // bottom: 0,
+    // width: '100%',
   },
   user: {
-    marginRight: 16,
-    textAlign: 'center',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
+    // marginRight: 16,
+    // textAlign: 'center',
+    // alignItems: 'center',
+    // justifyContent: 'flex-start',
   },
   user_icon: {
-    position: 'relative',
-    borderRadius: '50%',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.5,
-    shadowRadius: 2,
-    elevation: 2,
-    padding: 2,
-    backgroundColor: '#ffffff',
+    // position: 'relative',
+    // borderRadius: 50,
+    // shadowColor: '#000',
+    // shadowOffset: { width: 0, height: 0 },
+    // shadowOpacity: 0.5,
+    // shadowRadius: 2,
+    // elevation: 2,
+    // padding: 2,
+    // backgroundColor: '#ffffff',
   },
   user_active: {
-    bottom: 0,
-    right: 0,
-    zIndex: 10,
-    height: 6,
-    width: 6,
-    borderRadius: '50%',
-    position: 'absolute',
-    backgroundColor: '#FF0000',
+    // bottom: 0,
+    // right: 0,
+    // zIndex: 10,
+    // height: 6,
+    // width: 6,
+    // borderRadius: 50,
+    // position: 'absolute',
+    // backgroundColor: '#FF0000',
   },
   icon_text: {
-    fontSize: '12',
+    fontSize: 12,
     color: '#000000',
   },
 });

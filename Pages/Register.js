@@ -30,34 +30,34 @@ export default function Register() {
 
 const styles = StyleSheet.create({
     input_container: {
-        flex: 1,
-        height: "100%",
-        justifyContent: "center",
-        alignItems: "center",
+        // flex: 1,
+        // height: "100%",
+        // justifyContent: "center",
+        // alignItems: "center",
     },
     form: {
-        alignItems: "center",
+        // alignItems: "center",
     },
     title: {
-        color: "#000000",
-        fontSize: 18,
+        // color: "#000000",
+        // fontSize: 18,
     },
     msg_container: {
-        flex: 1,
+        // flex: 1,
     },
     icon_container: {
-        width: 50,
-        height: 50,
-        padding: 8,
-        position: "relative",
-        borderRadius: "50%",
-        backgroundColor: "#50895f",
+        // width: 50,
+        // height: 50,
+        // padding: 8,
+        // position: "relative",
+        // borderRadius: 50,
+        // backgroundColor: "#50895f",
     },
     send: {
         // color: "#ffffff",
-        left: "54%",    
-        top: "50%",
-        transform: "translate(-50%,-50%)",
-        position: "absolute",
+        // left: "54%",    
+        // top: "50%",
+        // transform: [{translate:(-50,-50)}],
+        // position: "absolute",
     },
 });

@@ -1,16 +1,19 @@
+import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-export default function ContactCard() {
+
+export default function ContactCard({toChatPage}) {
+    const navigation = useNavigation();
     return (
-        <View style={styles.chat_head}>
+        <Button title={''} style={styles.chat_head} onPress = {() => navigation.navigate({"name":"ChatPage"})}>
             <Icon name='account-circle' size={40} style={styles.profile}></Icon>
             <View style={styles.card}>
                 <Text style={styles.user_name}>UserName</Text>
             </View>
-        </View>
+        </Button>
     );
 }
 
@@ -27,7 +30,7 @@ const styles = StyleSheet.create({
     },
     card: {
         flex: 1,
-        paddingVertical: 15,
+        paddingVertical: 5,
         borderBottomWidth: 1,
         borderStyle: "solid",
         borderColor: "#808080",

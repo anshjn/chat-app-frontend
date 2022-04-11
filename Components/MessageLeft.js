@@ -17,7 +17,7 @@ export default function MessageLeft() {
 const styles = StyleSheet.create({
     msg_container: {
         padding: 4,
-        width: "60%",
+        flex: .6,
         borderRadius: 8,
         marginBottom: 8,
         position: "relative",
