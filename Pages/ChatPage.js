@@ -6,19 +6,37 @@ import ChatApp from '../Components/ChatApp';
 import InputMsg from '../Components/InputMsg';
 import MessageLeft from '../Components/MessageLeft';
 import MessageRight from '../Components/MessageRight';
+import { vw, vh, vmin, vmax } from 'react-native-expo-viewport-units';
 
 export default function ChatPage() {
   return (
-    <View>
+    <View style={{ height: vh(102) }}>
       
       <ChatApp />
       <ScrollView style={styles.chat_msg}>
         <MessageRight />
         <MessageLeft />
+        <MessageRight />
+        <MessageLeft />
+        <MessageRight />
+        <MessageLeft />
+        <MessageRight />
+        <MessageLeft />
+        <MessageRight />
+        <MessageLeft />
+        <MessageRight />
+        <MessageLeft />
+        <MessageRight />
+        <MessageLeft />
+        <MessageRight />
+        <MessageLeft />
+        <MessageRight />
+        <MessageLeft />
+        
         
         
       </ScrollView>
-      <View>
+      <View style={styles.msg_input}>
         <InputMsg />
       </View>
       <StatusBar style="auto" />
@@ -27,14 +45,14 @@ export default function ChatPage() {
 }
 
 const styles = StyleSheet.create({
-  // container: {
-  //   // flex: 0.8,
-  //   height: "100vh",
-  // },
   chat_msg: {
-    // flex: 1,
     paddingBottom: 6,
-    paddingHorizontal: 8,
+    paddingVertical: 6,
+    paddingHorizontal: 12,
     backgroundColor: "#d3d3d3",
+  },
+  msg_input:{
+    paddingVertical: 6,
+    height: 40,
   },
 });

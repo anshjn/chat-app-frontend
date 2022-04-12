@@ -16,8 +16,8 @@ export default function ChatApp() {
 const styles = StyleSheet.create({
     chat_head: {
         // flex: 0.14,
-        height: 50,
-        padding: 4,
+        height: 120,
+        padding: 6,
         alignItems: "center",
         flexDirection: 'row',
         backgroundColor: "#203636",
@@ -27,8 +27,8 @@ const styles = StyleSheet.create({
     },
     profile: {
         color: "#ffffff",
-        marginLeft: 1,
-        marginRight: 2,
+        marginLeft: 6,
+        marginRight: 3,
     },
     user_name: {
         flex: 1,

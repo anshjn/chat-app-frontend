@@ -29,7 +29,8 @@ const styles = StyleSheet.create({
     input_container: {
         // flex: 0.1,
         width: "100%",
-        height: 46,
+        // height: 46,
+        paddingHorizontal: 6,
         alignItems: "center",
         flexDirection: "row",
     },

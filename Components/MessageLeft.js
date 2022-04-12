@@ -18,9 +18,10 @@ const styles = StyleSheet.create({
     msg_container: {
         padding: 4,
         flex: .6,
+        width: "70%",
+        alignSelf: "flex-start",
         borderRadius: 8,
         marginBottom: 8,
-        position: "relative",
         backgroundColor: "#203636",
     },
     msg: {
@@ -28,12 +29,11 @@ const styles = StyleSheet.create({
         color: "#ffffff",
     },
     time_container: {
-        right: 4,
-        bottom: 0,
-        position: "absolute",
+        justifyContent: "flex-end",
     },
     msg_time: {
         color: "#808080",
         fontSize: 11,
+        textAlign: "right",
     },
 });
